@@ -16,7 +16,6 @@ import { Link } from 'react-router'
 
 import { auth } from '../config'
 import { getRandomIntNumberBetween } from '../utils/lib'
-import image from '../assets/images/youtube_logo_icon.png'
 import { useMemo, useState } from 'react'
 import { useDebounce } from '../customHooks/useDebounce'
 import { useQuery } from '@tanstack/react-query'
@@ -104,16 +103,14 @@ const MainNavigation = () => {
 						</IconButton>
 
 						<Logo isDarkMode={isDarkMode}>
-							<img
-								className="logo-img"
-								src={image}
-								alt="YouTube logo"
+							<span
 								style={{
-									width: '100%',
-									height: '100%',
-									objectFit: 'cover',
-								}}
-							/>
+									fontWeight: 'bold',
+									fontSize: '1.5rem',
+									color: 'red',
+								}}>
+								YT
+							</span>
 						</Logo>
 					</HeaderLetContainer>
 				</Link>
