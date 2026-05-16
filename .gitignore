@@ -23,3 +23,13 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
+
+# Added by Buildr github-import: never commit env values
+.env.*.local
+
+# Added by projectcode.dev
+node_modules
+dist
+build
+.next
+.vite
